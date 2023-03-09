@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background1.png);
+    opacity: 110%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    /* background-color: palevioletred; */
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    color: limegreen;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid limegreen;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: limegreen;
+    color: black;
+    border: 1px solid limegreen;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.text-box {
+    color: #fff;
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+}
+
+.text-box p {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text-box h1 {
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-clip: border-box;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+a {
+    background: none;
+    color: inherit;
+    text-decoration: none;
+}
